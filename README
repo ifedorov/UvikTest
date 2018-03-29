@@ -1,0 +1,20 @@
+Uvik test task
+
+Problem : Create a Django app for the following game:
+Description: A simple matching game uses a board that is a sequence of colored
+squares. Each player has a game piece. Players alternate turns, drawing cards
+containing either one colored square or two colored squares of the same color. Players
+move their pieces forward on the board to the next square that matches the single
+color on the card or forward to the second matching square if the card contains two
+colored squares, or forward to the last square on the board if there is no square
+matching the description above. A player wins if his piece lands on the last square of
+the board. It is possible for all the cards to be drawn and still not have a winner.
+
+
+#RUN
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py test
+python manage.py runserver 8000
+
